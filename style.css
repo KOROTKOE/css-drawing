@@ -1,0 +1,111 @@
+body{
+    background-color: #fff0f0;
+	margin: 0;
+    height:700px;
+    display: flex;
+}
+#con1{
+    background-color: rgb(2, 3, 3);
+    /* animation-name: start; */
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    height:25px;
+    width:50px;
+    margin-top: 200px;
+    border-radius: 0 25px 25px 0;
+    opacity: 0;
+}
+#con2{
+    /* transform: translate(500px,40px) scale(1) rotate(-140deg); */
+    background-color: rgb(2, 3, 3);
+    animation-name: rotate;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-delay: 5s;
+    height:25px;
+    width:50px;
+    margin-top: 200px;
+    border-radius: 0 25px 25px 0;
+    opacity: 0;
+}
+
+@keyframes shake {
+0%,
+100% {
+transform: translateX(0);
+}
+10%,
+30%,
+50%,
+70% {
+transform: translateX(-0.4em);
+}
+20%,
+40%,
+60% {
+transform: translateX(0.4em);
+}
+80% {
+transform: translateX(0.3em);
+}
+90% {
+transform: translateX(-0.3em);
+}
+}
+
+@keyframes rotate{
+    from{
+        opacity: 1;
+    }
+    to{
+        background-color: rgb(26, 168, 21);
+    }
+}
+
+@keyframes start {
+    0%{
+        transform: scale(0)  rotate(35deg);
+        opacity: 0;
+    }
+    10%{
+        transform: translate(50px,20px) scale(0.1) rotate(30deg);
+        opacity: 0.05;
+    }
+    20%{
+        transform: translate(100px,40px) scale(0.2) rotate(25deg);
+        opacity: 0.1;
+    }
+    30%{
+        transform: translate(150px,60px) scale(0.3) rotate(20deg);
+        opacity: 0.15;
+    }
+    40%{
+        transform: translate(200px,80px) scale(0.4) rotate(15deg);
+        opacity: 0.2;
+    }
+    50%{
+        transform: translate(250px,100px) scale(0.5) rotate(10deg);
+        opacity: 0.25;
+    }
+    60%{
+        transform: translate(300px,120px) scale(0.6) rotate(-20deg);
+        opacity: 0.4;
+    }
+    70%{
+        transform: translate(350px,100px) scale(0.7) rotate(-50deg);
+        opacity: 0.6;
+    }
+    80%{
+        transform: translate(400px,80px) scale(0.8) rotate(-80deg);
+        opacity: 0.8;
+    }
+    90%{
+        transform: translate(450px,60px) scale(0.9) rotate(-110deg);
+        opacity: 1;
+    }
+    100%{
+        transform: translate(500px,40px) scale(1) rotate(-140deg);
+    }
+}
