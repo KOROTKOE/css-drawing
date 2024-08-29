@@ -1,25 +1,39 @@
 body{
     background-color: #fff0f0;
 	margin: 0;
-    height:700px;
-    display: flex;
+    height:500px;
+    margin-left:100px;
+    margin-right:100px;
+    display: block;
 }
-#con1{
-    background-color: rgb(2, 3, 3);
+#figure1{
+    /* opacity: 0; */
     /* animation-name: start; */
     animation-iteration-count: 1;
     animation-timing-function: linear;
     animation-duration: 5s;
-    height:25px;
-    width:50px;
+}
+#f1c1{
+    display: inline-block;
+    transform: rotate(-30deg);
+    background-color: rgb(2, 3, 3);
+    width: 50px;
+    height: 50px;
     margin-top: 200px;
-    border-radius: 0 25px 25px 0;
-    opacity: 0;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+#f1c2{
+    /* background-color: #fff0f0;
+    height:10px;
+    width:35px;
+    margin-top:-100px; */
 }
 #con2{
     /* transform: translate(500px,40px) scale(1) rotate(-140deg); */
     background-color: rgb(2, 3, 3);
-    animation-name: rotate;
+    /* animation-name: rotate; */
     animation-iteration-count: 1;
     animation-timing-function: linear;
     animation-duration: 5s;
