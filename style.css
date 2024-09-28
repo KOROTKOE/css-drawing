@@ -3,15 +3,17 @@
     Background-color:#262626;
 */
 body{
-    background-color: #262626;
+    --background-color:#262626;
+    background-color: var(--background-color);
 	margin: 0;
     --length:500px;
-    --deley:7750ms;
+    --deley:0ms;
     --margin:30px;
-    height:500px;
-    width:500px;
+    height:var(--length);
+    width:var(--length);
     border:#090526 1px solid;
 }
+/* 7750ms */
 div{
     position: absolute;
 }
@@ -76,33 +78,34 @@ div{
     animation-duration: 500ms;
 }
 #fr10{
-    animation-delay: 7750ms;
+    animation-delay: var(--deley);
     filter:drop-shadow(0 0 20px #F2309B);
-    animation-name: rotate720BM1;
+    animation-name: rotate360BM1;
 }
 #fr11{
     transform: scale(0.8);
     filter:drop-shadow(0 0 20px #95BF39);
-    animation-name: rotate720BM2;
+    animation-name: rotate360BM2;
     animation-delay: calc(var(--deley) + 500ms);
 }
 #fr12{
     transform: scale(0.6);
     filter:drop-shadow(0 0 20px #F24C27);
-    animation-name: rotate720BM3;
+    animation-name: rotate360BM3;
     animation-delay: calc(var(--deley) + 1000ms);
 }
 #fr13{
     transform: scale(0.4);
     filter:drop-shadow(0 0 20px #F2309B);
-    animation-name: rotate720BM4;
+    animation-name: rotate360BM4;
     animation-delay: calc(var(--deley) + 1500ms);
 }
 #fr14{
     transform: scale(0.2);
-    animation-name:oshow;
-    animation-duration: calc(var(--deley) + 2000ms);
-    background:repeating-conic-gradient(#090526 0deg 30deg,transparent 30deg 60deg);
+    filter:drop-shadow(0 0 20px #F24C27);
+    animation-name:rotateMin;
+    animation-delay: calc(var(--deley) + 2000ms);
+    /* background:repeating-conic-gradient(#090526 0deg 30deg,transparent 30deg 60deg); */
 }
 .st-circle{
     width:500px;
@@ -113,9 +116,9 @@ div{
     animation-duration: 5s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
-    background:#262626;
+    background:var(--background-color);
     transform: scale(0);
-    box-shadow:0 0 50px #262626;
+    box-shadow:0 0 50px var(--background-color);
 }
 .out-circle>div{
     animation-duration: 500ms;
@@ -128,29 +131,35 @@ div{
     border-radius: 50%;
 }
 #of1{
+    box-shadow:0 0 0px 20px #090526;
+    opacity: 0;
+    animation-name: ohide;
     animation-duration: var(--deley);
-    animation-name: outMin1;
 }
 #of2{
+    animation-delay: var(--deley);
+    animation-name: outMin1;
+}
+#of3{
     animation-delay: calc(var(--deley) + 500ms);
     transform: scale(0.8);
     animation-name: outMin2;
 }
-#of3{
+#of4{
     animation-delay: calc(var(--deley) + 1000ms);
     transform: scale(0.6);
     animation-name: outMin3;
 }
-#of4{
+#of5{
     animation-delay: calc(var(--deley) + 1500ms);
     transform: scale(0.4);
     animation-name: outMin4;
 }
-#of5{
-    animation-name:oshow;
+#of6{
+    /* animation-name:oshow; */
     animation-delay: 0;
     animation-duration: calc(var(--deley) + 2000ms);
-    box-shadow:0 0 0px 50px #090526;
+    box-shadow:0 0 0px 60px #090526;
     transform: scale(0.2);
 }
 .center-circle>div{
@@ -168,4 +177,44 @@ div{
 #ccf2{
     transform: scale(0.3);
     background-color: #090526;
+}
+.wheel-place{
+    width: 130px;
+    height:130px;
+    z-index: -1;
+    background-color: var(--background-color);
+    margin-top: 185px;
+    margin-left: 185px;
+    border-radius: 50% 50% 0 0;
+}
+.around{
+    background-color: #263478;
+    margin-left:100px;
+    margin-top: 150px;
+    width: calc(var(--length) - 100px);
+    height: 140px;
+    z-index: -2;
+}
+.bottom>.p-1{
+    height: 0;
+    width: 0;
+    z-index: -1;
+    border-top: 5px solid transparent;
+    border-left: 10px solid var(--background-color);
+    border-bottom: 5px solid transparent;
+    margin-top: 280px;
+    margin-left:100px;
+    border-bottom-right-radius: 100%;
+    border-top-right-radius: 100%;
+}
+.bottom>.p-1::after{
+    content: '';
+    position:absolute;
+    border-bottom: 50px solid var(--background-color);
+    border-right: 10px solid transparent;
+    height: 0;
+    width: 0;
+    margin-top: -60px;
+    margin-left:-10px;
+    z-index: -1;
 }

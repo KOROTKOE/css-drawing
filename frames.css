@@ -1,38 +1,45 @@
-@keyframes rotate720BM1 {
+@keyframes rotate360BM1 {
     from{
         background:repeating-conic-gradient(#090526 0deg 30deg,transparent 30deg 60deg);
     }
     to{
-        transform: rotate(-720deg) scale(0.8);
+        transform: rotate(-360deg) scale(0.8);
     }
 }
-@keyframes rotate720BM2 {
+@keyframes rotate360BM2 {
     from{
         transform: rotate(0) scale(0.8);
         background:repeating-conic-gradient(#090526 0deg 30deg,transparent 30deg 60deg);
     }
     to{
-        transform: rotate(-720deg) scale(0.6);
+        transform: rotate(-360deg) scale(0.6);
     }
 }
-@keyframes rotate720BM3 {
+@keyframes rotate360BM3 {
     from{
-        
         transform: rotate(0) scale(0.6);
         background:repeating-conic-gradient(#090526 0deg 30deg,transparent 30deg 60deg);
     }
     to{
-        transform: rotate(-720deg) scale(0.4);
+        transform: rotate(-360deg) scale(0.4);
     }
 }
-@keyframes rotate720BM4 {
+@keyframes rotate360BM4 {
     from{
-        
         transform: rotate(0) scale(0.4);
         background:repeating-conic-gradient(#090526 0deg 30deg,transparent 30deg 60deg);
     }
     to{
-        transform: rotate(-1440deg) scale(0.2);
+        transform: rotate(-360deg) scale(0.2);
+    }
+}
+@keyframes rotateMin {
+    from{
+        transform: rotate(0) scale(0.2);
+        background:repeating-conic-gradient(#090526 0deg 30deg,transparent 30deg 60deg);
+    }
+    to{
+        transform: rotate(-360deg) scale(0.2);
     }
 }
 @keyframes rotateB {
@@ -149,5 +156,16 @@
     }
     100%{
         opacity: 1;
+    }
+}
+@keyframes ohide {
+    0%{
+        opacity: 1;
+    }
+    99%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
     }
 }
