@@ -195,10 +195,12 @@ div{
     height: 140px;
     z-index: -2;
 }
+.bottom>div{
+    z-index:-1;
+}
 .bottom>.p-1{
     height: 0;
     width: 0;
-    z-index: -1;
     border-top: 5px solid transparent;
     border-left: 10px solid var(--background-color);
     border-bottom: 5px solid transparent;
@@ -216,5 +218,46 @@ div{
     width: 0;
     margin-top: -60px;
     margin-left:-10px;
-    z-index: -1;
+}
+.bottom>.p-2{
+    border-right: 70px solid transparent;
+    border-top: 30px solid var(--background-color);
+    height: 0;
+    width: 0;
+    margin-top: 150px;
+    margin-left:100px;
+}
+.bottom>.p-2::after{
+    width:0;
+    height:25px;
+    margin-top:-5px;
+    position: absolute;
+    content:'';
+    border-top:10px solid transparent;
+    border-bottom:10px solid transparent;
+    border-left: 15px solid var(--background-color);
+}
+.bottom>.p-3{
+    margin-top: 150px;
+    margin-left:100px;
+    background-color: #72bce9;
+    width:250px;
+    height:0px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-right:50px solid var(--background-color);
+    border-bottom:15px solid transparent;
+    transform:rotateZ(-8deg);
+}
+.bottom>.p-3::after{
+    content: '';
+    position:absolute;
+    width:0px;
+    height:0px;
+    margin-left:35px;
+    margin-top:-37px;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 71px solid #72bce9;
+    transform:rotateZ(75deg)
 }
