@@ -403,7 +403,105 @@
     margin:5px 0 0 -110px;
     height: 0; 
     width: 90px;
-    border-bottom: 50px solid #638087;
+    border-bottom: 50px solid #3c3c3b;
     border-left: 110px solid transparent;
     border-right: 10px solid transparent;
+}
+.car>.p-24{
+    margin:76px 0 0 640px;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 20%;
+    height:60px;
+    width:80px;
+    background-color: #1d1d1b;
+    transform: rotate(-5deg);
+}
+.car>.p-24::after{
+    margin:5px 0 0 0px;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 20%;
+    height:50px;
+    width:70px;
+    background-color: #638087;
+}
+.car>.p-25{
+    margin:61px 0 0 500px;
+    border-top:10px solid #5080c1;
+    width:220px;
+    height:0;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+}
+.car>.p-25::after{
+    margin:-5px 0 0 5px;
+    width:50px;
+    height:13px;
+    background-color: #5080c1;
+    border-bottom-left-radius: 50%;
+}
+.car>.p-26{
+    margin:90px 0 0 445px;
+    height: 0; 
+    width: 80px;
+    border-bottom: 40px solid #638087;
+    border-left: 90px solid transparent;
+    border-right: 10px solid transparent;
+}
+.car>.p-26::after{
+    background-color: #3c3c3b;
+    transform: rotate(-30deg);
+    width:7px;
+    height:30px;
+    margin: 17px 0 0 -45px;
+}
+.car>.p-27{
+    background-color: #3c3c3b;
+    margin:100px 0 0 600px;
+    height:32px;
+    width:13px;
+    border-radius: 35% 35% 0 0;
+    transform: rotate(5deg);
+}
+.car>.p-27::after{
+    margin: 15px 0 0 -10px;
+    background-color: #3c3c3b;
+    height:20px;
+    width:13px;
+    border-top-left-radius: 100%;
+}
+.car>.p-28{
+    margin:105px 0 0 420px;
+    opacity: 0.5;
+    width: 137px;
+    height:0;
+    border-left: 68px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 30px solid #b9ccd1;
+}
+.car>.p-28::after{
+    margin:7px 0 0 153px;
+    width: 65px;
+    height:0;
+    border-left: 2px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 20px solid #b9ccd1;
+    transform: rotate(-5deg);
+}
+.car>.p-29{
+    background-color: #263478;
+    width:50px;
+    height:25px;
+    border-radius: 30%;
+    opacity: 1;
+    margin:115px 0 0 420px;
+    transform: rotate(-5deg);
+}
+.car>.p-29::after{
+    width: 0; 
+    height: 0;
+    border-bottom: 16px solid #5080c1;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    margin:10px 0 0 -30px;
 }
